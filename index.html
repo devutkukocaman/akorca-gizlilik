@@ -6,15 +6,22 @@
 <title>Akorca Gizlilik Politikası</title>
 <meta name="description" content="Akorca uygulamasının gizlilik politikası / Privacy policy of the Akorca app.">
 <style>
-  :root { --bg:#fbf7f2; --fg:#231a12; --muted:#6b5b4d; --accent:#c05a00; --card:#ffffff; --line:#eadfd3; }
+  /* Renkler uygulamanın temalarından (studio_theme.dart): açık tema ve koyu tema. */
+  @font-face { font-family: "Metal Mania"; src: url("MetalMania-Regular.ttf") format("truetype"); font-display: swap; }
+  :root { --bg:#E4E8F0; --fg:#2B2F3A; --muted:#5A6072; --accent:#B8860B; --card:#EAEDF4; --line:#B8BFCE; --brand:#E9B95F; }
   @media (prefers-color-scheme: dark) {
-    :root { --bg:#16110d; --fg:#f2e9df; --muted:#b9a894; --accent:#ffa11a; --card:#201913; --line:#3a2e24; }
+    :root { --bg:#15151A; --fg:#EDE6D6; --muted:#B4AD9C; --accent:#D4A017; --card:#202026; --line:#3A3A44; --brand:#E9B95F; }
   }
   * { box-sizing: border-box; }
   body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
   main { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
   header { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom: 8px; }
-  h1 { font-size: 1.8rem; margin: 0; }
+  /* Uygulamadaki AKORCA yazı logosu: Metal Mania, sondaki A aynalı (akorca_wordmark.dart). */
+  .wordmark { display:block; font: 3rem/1 "Metal Mania", system-ui, sans-serif; color: var(--brand); letter-spacing: 0; }
+  .wordmark span { display:inline-block; }
+  .wordmark .flip { transform: scaleX(-1); }
+  h1 { font-size: 1.35rem; font-weight: 700; margin: .35rem 0 0; }
+  .brand { display:flex; flex-direction:column; }
   h2 { font-size: 1.15rem; margin: 2rem 0 .4rem; color: var(--accent); }
   .muted { color: var(--muted); font-size: .92rem; }
   nav a { font-weight: 600; text-decoration: none; }
@@ -30,7 +37,10 @@
 
 <section id="tr" lang="tr">
   <header>
-    <h1>Akorca Gizlilik Politikası</h1>
+    <div class="brand">
+      <span class="wordmark" role="img" aria-label="Akorca"><span>A</span><span>K</span><span>O</span><span>R</span><span>C</span><span class="flip">A</span></span>
+      <h1>Gizlilik Politikası</h1>
+    </div>
     <nav><a href="#en">English</a></nav>
   </header>
   <p class="muted">Son güncelleme: 23 Ekim 2026 · Uygulama: Akorca (<code>com.utkukocaman.akorca</code>) · Geliştirici: Utku Kocaman</p>
@@ -88,7 +98,10 @@
 
 <section id="en" lang="en">
   <header>
-    <h1>Akorca Privacy Policy</h1>
+    <div class="brand">
+      <span class="wordmark" role="img" aria-label="Akorca"><span>A</span><span>K</span><span>O</span><span>R</span><span>C</span><span class="flip">A</span></span>
+      <h1>Privacy Policy</h1>
+    </div>
     <nav><a href="#tr">Türkçe</a></nav>
   </header>
   <p class="muted">Last updated: 23 October 2026 · App: Akorca (<code>com.utkukocaman.akorca</code>) · Developer: Utku Kocaman</p>
