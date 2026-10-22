@@ -33,11 +33,12 @@
     <h1>Akorca Gizlilik Politikası</h1>
     <nav><a href="#en">English</a></nav>
   </header>
-  <p class="muted">Son güncelleme: 13 Ekim 2026 · Uygulama: Akorca (<code>com.utkukocaman.akorca</code>) · Geliştirici: Utku Kocaman</p>
+  <p class="muted">Son güncelleme: 23 Ekim 2026 · Uygulama: Akorca (<code>com.utkukocaman.akorca</code>) · Geliştirici: Utku Kocaman</p>
 
   <div class="card">
-    <strong>Özet.</strong> Akorca sizden kişisel veri istemez ve toplamaz. Hesap, reklam, analiz ya da çökme raporu yoktur.
-    Şarkılarınız ve sonuçlar yalnızca sizin telefonunuzda kalır.
+    <strong>Özet.</strong> Akorca sizden kişisel veri istemez ve toplamaz. Akorca'da hesap, reklam, analiz ya da çökme raporu yoktur.
+    Şarkılarınız ve sonuçlar yalnızca sizin telefonunuzda kalır. Tek istisna, satın alma için kullanılan Google Play Faturalandırma Kitaplığı'nın
+    Google'a gönderebileceği teknik verilerdir (3. bölüm).
   </div>
 
   <h2>1. Cihazınızda neler işlenir?</h2>
@@ -49,20 +50,24 @@
   <h2>2. İstenen izinler ve nedenleri</h2>
   <ul>
     <li><strong>Ses dosyalarına erişim</strong> (<code>READ_MEDIA_AUDIO</code>; Android 12 ve öncesinde <code>READ_EXTERNAL_STORAGE</code>): şarkılarınızı listelemek ve içe aktarmak için.</li>
-    <li><strong>Bildirim ve ön plan servisi</strong> (<code>POST_NOTIFICATIONS</code>, <code>FOREGROUND_SERVICE</code>): akor çıkarımı ve ses ayırma sürerken ilerlemeyi göstermek ve işlemin arka planda kesilmemesi için.</li>
+    <li><strong>Bildirim ve ön plan servisi</strong> (<code>POST_NOTIFICATIONS</code>, <code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_DATA_SYNC</code>, <code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code>): akor çıkarımı ve ses ayırma sürerken ilerlemeyi göstermek, işlemin arka planda kesilmemesi ve uygulamadan çıkıldığında çalan şarkının kesintisiz sürmesi ile bildirim kartından denetlenebilmesi için.</li>
     <li><strong>Ekranın açık kalması</strong> (<code>WAKE_LOCK</code>): çalarken ve işlerken ekranın ya da işlemin uykuya geçmemesi için.</li>
     <li><strong>Satın alma</strong> (<code>com.android.vending.BILLING</code>): tam sürümü uygulama içinden satın almanız için.</li>
+    <li><strong>İnternet ve ağ durumu</strong> (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>): bu izinler Google Play Faturalandırma Kitaplığı'nın bileşenleri tarafından uygulamaya eklenir ve satın alma ile ilgili iletişim için gerekir. Akorca'nın kendi işlevleri (akor çıkarımı, ses ayırma, çalma) bu izinleri kullanmaz.</li>
   </ul>
 
-  <h2>3. Satın alma ve Google Play</h2>
+  <h2>3. Satın alma, Google Play ve telemetri</h2>
   <p>Tam sürüm, Google Play üzerinden tek seferlik uygulama içi satın alma olarak sunulur. Ödemeniz Google tarafından işlenir;
-  kart ya da ödeme bilgilerinize Akorca ve geliştirici erişemez. Satın alımınızın doğrulanması için Google Play Faturalandırma Kitaplığı kullanılır.
-  Bu kitaplık, çalışmasının bir parçası olarak Google'a teknik ve tanılama verisi gönderebilir; bu veri Google'ın kontrolündedir ve
-  <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a> kapsamındadır. Akorca'nın kendi kodu internet üzerinden veri göndermez.</p>
+  kart ya da ödeme bilgilerinize Akorca ve geliştirici erişemez. Satın alımınızın doğrulanması için, Google Play'de dijital ürün satışı için
+  kullanılması gereken Google Play Faturalandırma Kitaplığı kullanılır.</p>
+  <p>Bu kitaplık Google'ın bir bileşenidir ve çalışmasının bir parçası olarak Google'a teknik ve tanılama verisi (telemetri) gönderebilir.
+  Bu veri gönderimi <strong>Google tarafından tasarlanmıştır ve yönetilir</strong>; kapsamı ve içeriği Akorca'nın denetiminde değildir, geliştirici bu veriyi toplamaz,
+  görmez ve erişemez. Bu veri <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a> kapsamındadır.
+  Akorca'nın kendi kodu internet üzerinden veri göndermez.</p>
 
   <h2>4. Paylaşım ve satış</h2>
   <p>Kişisel veri toplamadığımız için paylaşılan, satılan ya da reklam amacıyla kullanılan hiçbir veri yoktur.
-  Üçüncü taraf reklam, analiz ya da izleme kütüphanesi kullanmıyoruz.</p>
+  Reklam, analiz ya da izleme amacıyla üçüncü taraf kütüphane kullanmıyoruz; 3. bölümde anlatılan Google Play Faturalandırma Kitaplığı yalnızca satın alma içindir.</p>
 
   <h2>5. Çocuklar</h2>
   <p>Akorca özellikle çocuklara yönelik değildir ve hiçbir yaş grubundan kişisel veri toplamaz.</p>
@@ -86,11 +91,12 @@
     <h1>Akorca Privacy Policy</h1>
     <nav><a href="#tr">Türkçe</a></nav>
   </header>
-  <p class="muted">Last updated: 13 October 2026 · App: Akorca (<code>com.utkukocaman.akorca</code>) · Developer: Utku Kocaman</p>
+  <p class="muted">Last updated: 23 October 2026 · App: Akorca (<code>com.utkukocaman.akorca</code>) · Developer: Utku Kocaman</p>
 
   <div class="card">
-    <strong>Summary.</strong> Akorca does not ask for or collect personal data. There are no accounts, ads, analytics or crash reports.
-    Your songs and results stay on your phone.
+    <strong>Summary.</strong> Akorca does not ask for or collect personal data. Akorca has no accounts, ads, analytics or crash reports.
+    Your songs and results stay on your phone. The one exception is the technical data that the Google Play Billing Library, used for purchases,
+    may send to Google (section 3).
   </div>
 
   <h2>1. What is processed on your device?</h2>
@@ -102,20 +108,24 @@
   <h2>2. Permissions and why they are requested</h2>
   <ul>
     <li><strong>Audio file access</strong> (<code>READ_MEDIA_AUDIO</code>; <code>READ_EXTERNAL_STORAGE</code> on Android 12 and earlier): to list and import your songs.</li>
-    <li><strong>Notifications and foreground service</strong> (<code>POST_NOTIFICATIONS</code>, <code>FOREGROUND_SERVICE</code>): to show progress while chords are detected and audio is separated, and to keep the task from being interrupted in the background.</li>
+    <li><strong>Notifications and foreground service</strong> (<code>POST_NOTIFICATIONS</code>, <code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_DATA_SYNC</code>, <code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code>): to show progress while chords are detected and audio is separated, to keep the task from being interrupted in the background, and to keep the playing song going when you leave the app and let you control it from the notification card.</li>
     <li><strong>Keep awake</strong> (<code>WAKE_LOCK</code>): so the screen or the task does not go to sleep during playback and processing.</li>
     <li><strong>Purchases</strong> (<code>com.android.vending.BILLING</code>): so you can buy the full version in the app.</li>
+    <li><strong>Internet and network state</strong> (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>): these permissions are added to the app by components of the Google Play Billing Library and are needed for purchase-related communication. Akorca's own features (chord detection, stem separation, playback) do not use them.</li>
   </ul>
 
-  <h2>3. Purchases and Google Play</h2>
+  <h2>3. Purchases, Google Play and telemetry</h2>
   <p>The full version is offered as a one-time in-app purchase through Google Play. Your payment is processed by Google;
-  neither Akorca nor the developer can access your card or payment details. The Google Play Billing Library is used to verify your purchase.
-  As part of its operation, this library may send technical and diagnostic data to Google; that data is under Google's control and covered by the
-  <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Akorca's own code does not send data over the internet.</p>
+  neither Akorca nor the developer can access your card or payment details. To verify your purchase, the app uses the Google Play Billing Library,
+  which is required for selling digital items on Google Play.</p>
+  <p>This library is a Google component and, as part of its operation, may send technical and diagnostic data (telemetry) to Google.
+  That data transmission is <strong>designed and managed by Google</strong>; its scope and content are outside Akorca's control, and the developer does not collect,
+  see or have access to it. It is covered by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
+  Akorca's own code does not send data over the internet.</p>
 
   <h2>4. Sharing and selling</h2>
   <p>Because we do not collect personal data, no data is shared, sold or used for advertising.
-  We do not use any third-party advertising, analytics or tracking libraries.</p>
+  We do not use third-party libraries for advertising, analytics or tracking; the Google Play Billing Library described in section 3 is used for purchases only.</p>
 
   <h2>5. Children</h2>
   <p>Akorca is not directed at children and does not collect personal data from any age group.</p>
